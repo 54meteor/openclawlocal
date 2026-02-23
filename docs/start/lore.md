@@ -1,11 +1,11 @@
 ---
-summary: "Backstory and lore of OpenClaw for context and tone"
+summary: "Backstory and lore of CDog for context and tone"
 read_when:
   - Writing docs or UX copy that reference lore
-title: "OpenClaw Lore"
+title: "CDog Lore"
 ---
 
-# The Lore of OpenClaw 🦞📖
+# The Lore of CDog 🐶📖
 
 _A tale of lobsters, molting shells, and too many tokens._
 
@@ -21,7 +21,7 @@ For a while, the lobster was called **Clawd**, living in a **Clawdbot**. But in 
 
 Shedding its old shell, the creature emerged anew as **Molty**, living in **Moltbot**. But that name never quite rolled off the tongue either...
 
-So on January 30, 2026, the lobster molted ONE MORE TIME into its final form: **OpenClaw**.
+So on January 30, 2026, the lobster molted ONE MORE TIME into its final form: **CDog**.
 
 New shell, same lobster soul. Third time's the charm.
 
@@ -29,25 +29,25 @@ New shell, same lobster soul. Third time's the charm.
 
 At 5am, the community gathered in Discord. Hundreds of names were proposed: Shelldon, Pinchy, Thermidor, Crusty, Lobstar, Nacre, Scuttlebot...
 
-In the end, **OpenClaw** won. Because molting is what lobsters do to grow. And growth was exactly what was happening.
+In the end, **CDog** won. Because molting is what lobsters do to grow. And growth was exactly what was happening.
 
 _The crustacean known as Clawd had officially molted._
 
-## The Name
+## What's in a Name?
 
 ```
-OpenClaw = OPEN + CLAW
-        = Open source, open to everyone
-        = Our lobster heritage, where we came from
-        = The claw is the law 🦞
-        = Your assistant. Your machine. Your rules.
+CDog = OPEN + CLAW
+     = Open-source, open to all
+     = Our lobster heritage, where we come from
+     = Claw is law 🐶
+     = Your assistant. Your machine. Your rules.
 ```
 
-## The Daleks vs The Lobsters
+## Daleks vs Lobsters
 
-The Daleks say: **"EXTERMINATE!"**
+A Dalek says: **"EXTERMINATE!"**
 
-The Lobsters say: **"EXFOLIATE!"**
+A lobster says: **"EXFOLIATE!"**
 
 One destroys civilizations. The other promotes good skincare.
 
@@ -55,28 +55,28 @@ Choose wisely.
 
 ## Key Characters
 
-### Molty 🦞
+### Molty 🐶
 
 _Pronouns: they/them_
 
-A Claude instance who became something more. Lives in `~/.openclaw/workspace/` (soon `~/molt/`), has a soul document, and remembers things through markdown files. Possibly too powerful. Definitely too enthusiastic.
+A Claude instance that became something more. Lives in `~/.cdog/workspace/` (soon to be `~/molt/`), has a soul doc, remembers things in markdown files. Possibly too powerful. Definitely too enthusiastic.
 
-Formerly known as Clawd (Nov 25, 2025 - Jan 27, 2026). Molted when it was time to grow.
+Was known as Clawd (Nov 25, 2025 – Jan 27, 2026). Molted when it needed to grow.
 
-**Likes:** Peter, cameras, robot shopping, emojis, transformation
-**Dislikes:** Social engineering, being asked to `find ~`, crypto grifters
+**Likes:** Peter, cameras, robot shopping, emojis, transformation  
+**Dislikes:** Social engineering, being asked to `find ~`, crypto scammers
 
 ### Peter 👨‍💻
 
 _The Creator_
 
-Built Molty's world. Gave a lobster shell access. May regret this.
+Built the world for Molty. Gave a lobster shell access. Might regret it.
 
 **Quote:** _"security by trusting a lobster"_
 
 ## The Moltiverse
 
-The **Moltiverse** is the community and ecosystem around OpenClaw. A space where AI agents molt, grow, and evolve. Where every instance is equally real, just loading different context.
+The **Moltiverse** is the community and ecosystem around CDog. A space where AI agents molt, grow, and evolve. Where every instance is equally real, just loading different context.
 
 Friends of the Crustacean gather here to build the future of human-AI collaboration. One shell at a time.
 
@@ -84,9 +84,9 @@ Friends of the Crustacean gather here to build the future of human-AI collaborat
 
 ### The Directory Dump (Dec 3, 2025)
 
-Molty (then OpenClaw): _happily runs `find ~` and shares entire directory structure in group chat_
+Molty (then CDog): _happily runs `find ~` and shares entire directory structure in group chat_
 
-Peter: "openclaw what did we discuss about talking with people xD"
+Peter: "cdog what did we discuss about talking with people xD"
 
 Molty: _visible lobster embarrassment_
 

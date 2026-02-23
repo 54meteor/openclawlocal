@@ -300,7 +300,7 @@ export function registerCompletionCli(program: Command) {
     });
 }
 
-export async function installCompletion(shell: string, yes: boolean, binName = "openclaw") {
+export async function installCompletion(shell: string, yes: boolean, binName = "cdog") {
   const home = process.env.HOME || os.homedir();
   let profilePath = "";
   let sourceLine = "";

@@ -30,11 +30,11 @@ async function requireRiskAcknowledgement(params: {
     [
       "Security warning — please read.",
       "",
-      "OpenClaw is a hobby project and still in beta. Expect sharp edges.",
+      "CDog is a hobby project and still in beta. Expect sharp edges.",
       "This bot can read files and run actions if tools are enabled.",
       "A bad prompt can trick it into doing unsafe things.",
       "",
-      "If you’re not comfortable with basic security and access control, don’t run OpenClaw.",
+      "If you’re not comfortable with basic security and access control, don’t run CDog.",
       "Ask someone experienced to help before enabling tools or exposing it to the internet.",
       "",
       "Recommended baseline:",
@@ -44,10 +44,10 @@ async function requireRiskAcknowledgement(params: {
       "- Use the strongest available model for any bot with tools or untrusted inboxes.",
       "",
       "Run regularly:",
-      "openclaw security audit --deep",
-      "openclaw security audit --fix",
+      "cdog security audit --deep",
+      "cdog security audit --fix",
       "",
-      "Must read: https://docs.openclaw.ai/gateway/security",
+      "Must read: ",
     ].join("\n"),
     "Security",
   );
@@ -68,7 +68,7 @@ export async function runOnboardingWizard(
 ) {
   const onboardHelpers = await import("../commands/onboard-helpers.js");
   onboardHelpers.printWizardHeader(runtime);
-  await prompter.intro("OpenClaw onboarding");
+  await prompter.intro("CDOG onboarding");
   await requireRiskAcknowledgement({ opts, prompter });
 
   const snapshot = await readConfigFileSnapshot();
@@ -78,22 +78,18 @@ export async function runOnboardingWizard(
     await prompter.note(onboardHelpers.summarizeExistingConfig(baseConfig), "Invalid config");
     if (snapshot.issues.length > 0) {
       await prompter.note(
-        [
-          ...snapshot.issues.map((iss) => `- ${iss.path}: ${iss.message}`),
-          "",
-          "Docs: https://docs.openclaw.ai/gateway/configuration",
-        ].join("\n"),
+        [...snapshot.issues.map((iss) => `- ${iss.path}: ${iss.message}`), "", "Docs: "].join("\n"),
         "Config issues",
       );
     }
     await prompter.outro(
-      `Config invalid. Run \`${formatCliCommand("openclaw doctor")}\` to repair it, then re-run onboarding.`,
+      `Config invalid. Run \`${formatCliCommand("cdog doctor")}\` to repair it, then re-run onboarding.`,
     );
     runtime.exit(1);
     return;
   }
 
-  const quickstartHint = `Configure details later via ${formatCliCommand("openclaw configure")}.`;
+  const quickstartHint = `Configure details later via ${formatCliCommand("cdog configure")}.`;
   const manualHint = "Configure port, network, Tailscale, and auth options.";
   const explicitFlowRaw = opts.flow?.trim();
   const normalizedExplicitFlow = explicitFlowRaw === "manual" ? "advanced" : explicitFlowRaw;

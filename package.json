@@ -1,5 +1,5 @@
 {
-  "name": "openclaw",
+  "name": "cdog",
   "version": "2026.2.23",
   "description": "Multi-channel AI gateway with extensible messaging integrations",
   "keywords": [],
@@ -45,7 +45,7 @@
       "types": "./dist/plugin-sdk/account-id.d.ts",
       "default": "./dist/plugin-sdk/account-id.js"
     },
-    "./cli-entry": "./openclaw.mjs"
+    "./cli-entry": "./cdog.mjs"
   },
   "scripts": {
     "build": "pnpm canvas:a2ui:bundle && tsdown && pnpm build:plugin-sdk:dts && node --import tsx scripts/write-plugin-sdk-entry-dts.ts && node --import tsx scripts/canvas-a2ui-copy.ts && node --import tsx scripts/copy-hook-metadata.ts && node --import tsx scripts/copy-export-html-templates.ts && node --import tsx scripts/write-build-info.ts && node --import tsx scripts/write-cli-compat.ts",

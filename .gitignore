@@ -105,3 +105,4 @@ apps/ios/LocalSigning.xcconfig
 dist/protocol.schema.json
 .ant-colony/
 docs/legacy-support-removal.md
+post-mobile-removal-check.js

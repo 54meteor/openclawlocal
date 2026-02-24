@@ -34,6 +34,7 @@ export function loadSettings(): UiSettings {
     splitRatio: 0.6,
     navCollapsed: false,
     navGroupsCollapsed: {},
+    locale: "zh-CN" // 设置默认语言为中文
   };
 
   try {

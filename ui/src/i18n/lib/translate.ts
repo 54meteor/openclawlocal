@@ -1,4 +1,7 @@
+import { zh_CN } from "../locales/zh-CN.ts";
 import { en } from "../locales/en.ts";
+import { zh_TW } from "../locales/zh-TW.ts";
+import { pt_BR } from "../locales/pt-BR.ts";
 import type { Locale, TranslationMap } from "./types.ts";
 
 type Subscriber = (locale: Locale) => void;
@@ -10,8 +13,13 @@ export function isSupportedLocale(value: string | null | undefined): value is Lo
 }
 
 class I18nManager {
-  private locale: Locale = "en";
-  private translations: Record<Locale, TranslationMap> = { en } as Record<Locale, TranslationMap>;
+  private locale: Locale = "zh-CN"; // 设置默认语言为中文
+  private translations: Record<Locale, TranslationMap> = {
+    "zh-CN": zh_CN,
+    "en": en,
+    "zh-TW": zh_TW,
+    "pt-BR": pt_BR
+  };
   private subscribers: Set<Subscriber> = new Set();
 
   constructor() {
@@ -23,13 +31,15 @@ class I18nManager {
     if (isSupportedLocale(saved)) {
       this.locale = saved;
     } else {
+      // 优先使用中文作为默认语言
       const navLang = navigator.language;
       if (navLang.startsWith("zh")) {
         this.locale = navLang === "zh-TW" || navLang === "zh-HK" ? "zh-TW" : "zh-CN";
       } else if (navLang.startsWith("pt")) {
         this.locale = "pt-BR";
       } else {
-        this.locale = "en";
+        // 如果不是中文环境，默认使用中文而不是英文
+        this.locale = "zh-CN";
       }
     }
   }

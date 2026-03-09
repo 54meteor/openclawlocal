@@ -241,8 +241,8 @@ export function renderApp(state: AppViewState) {
               <img src=${basePath ? `${basePath}/favicon.svg` : "/favicon.svg"} alt="OpenClaw" />
             </div>
             <div class="brand-text">
-              <div class="brand-title">CDog</div>
-              <div class="brand-sub">Gateway Dashboard</div>
+              <div class="brand-title">柴犬AI工作站</div>
+              <div class="brand-sub">cDog control center</div>
             </div>
           </div>
         </div>

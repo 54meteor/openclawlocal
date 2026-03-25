@@ -3,15 +3,15 @@
   "version": "2026.4.1",
   "description": "Multi-channel AI gateway with extensible messaging integrations",
   "keywords": [],
-  "homepage": "https://github.com/openclawlocal/openclaw#readme",
+  "homepage": "https://github.com/54meteor/openclawlocal#readme",
   "bugs": {
-    "url": "https://github.com/openclawlocal/openclaw/issues"
+    "url": "https://github.com/54meteor/openclawlocal/issues"
   },
   "license": "MIT",
   "author": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/openclawlocal/openclaw.git"
+    "url": "git+https://github.com/54meteor/openclawlocal/openclawlocal.git"
   },
   "bin": {
     "openclaw": "openclaw.mjs"
